@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
+<head>
     <meta charset="utf-8">
     <title>mutableDOM</title>
     <link rel="stylesheet" href="./css/master.css">
     <script type="text/javascript" src='./lib/mutabledom.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <nav>
-      </nav>
-    </header>=
-    
-    <div id="main-content" class="">
-      <p>This is the main content.</p>
-    </div>
+        <nav>
+            <navbar>
+                <section id="nav-right">
+                    <span>Brand</span>
+                </section>
+                <section id="nav-center">
+                    <span>Welcome to MutableDOM</span>
+                </section>
+                <section id="nav-right">
+                    <ul>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                        <li>Link 3</li>
+                    </ul>
+                </section>
+            </navbar>
+        </nav>
+    </header>
 
-    <div id="side-content">
-      <span>Side content.</span>
-    </div>
-    
-    <div id="link-content">
-      <ul>
-        UL LIST
-        <li>Hi</li>
-        <li>123
-          <p>para in li<br><a href="#">link in para</a></p>
-        </li>
-        <li>456</li>
-      </ul>
-    </div>
+    <section id="content-wrapper">
+        <aside id="side-content">
+            <span>Side content.</span>
+        </aside>
 
-    <p>PUT THIS ON ALL ELEMENTS</p>
+        <div id="main-content" class="center">
+            <p>This is the main content.</p>
+            <div id="link-content">
+                <ul>
+                    UL LIST
+                    <li>Hi</li>
+                    <li>123
+                        <p>para in li<br><a href="#">link in para</a></p>
+                    </li>
+                    <li>456</li>
+                </ul>
+            </div>
 
-    <div id="end-content">
-      <p>End of the content</p>
-      <a class='dingo' href="#">link1</a>
-      <a href="#">link2</a>
-    </div>
-  </body>
+            <p>PUT THIS ON ALL ELEMENTS</p>
+
+            <div id="end-content">
+                <p>End of the content</p>
+                <a class='dingo' href="#">link1</a>
+                <a href="#">link2</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        This is the footer.
+    </footer>
+</body>
+
 </html>
