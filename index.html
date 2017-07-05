@@ -2,65 +2,63 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>mutableDOM</title>
-    <link rel="stylesheet" href="./css/master.css">
-    <script type="text/javascript" src='./lib/mutabledom.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <title>mutableDOM</title>
+  <link rel="stylesheet" href="./css/master.css">
+  <script type="text/javascript" src='./lib/mutabledom.js'></script>
+  <script type="text/javascript" src="./experiment.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <navbar>
-                <section id="nav-right">
-                    <span>Brand</span>
-                </section>
-                <section id="nav-center">
-                    <span>Welcome to MutableDOM</span>
-                </section>
-                <section id="nav-right">
-                    <ul>
-                        <li>Link 1</li>
-                        <li>Link 2</li>
-                        <li>Link 3</li>
-                    </ul>
-                </section>
-            </navbar>
-        </nav>
-    </header>
-
-    <section id="content-wrapper">
-        <aside id="side-content">
-            <span>Side content.</span>
-        </aside>
-
-        <div id="main-content" class="center">
-            <p>This is the main content.</p>
-            <div id="link-content">
-                <ul>
-                    UL LIST
-                    <li>Hi</li>
-                    <li>123
-                        <p>para in li<br><a href="#">link in para</a></p>
-                    </li>
-                    <li>456</li>
-                </ul>
-            </div>
-
-            <p>PUT THIS ON ALL ELEMENTS</p>
-
-            <div id="end-content">
-                <p>End of the content</p>
-                <a class='dingo' href="#">link1</a>
-                <a href="#">link2</a>
-            </div>
-        </div>
-    </section>
-
+  <header>
+    <nav>
+      <navbar>
+        <section id="nav-right">
+          <span>#nav-right</span>
+        </section>
+        <section id="nav-center">
+          <span>Welcome to MutableDOM (#nav-center)</span>
+        </section>
+        <section id="nav-right">
+          <ul>
+            <li><a href="">addClass</a></li>
+            <li><a href="">removeClass</a></li>
+            <li><a href="">toggleClass</a></li>
+            #nav-right
+          </ul>
+        </section>
+      </navbar>
+    </nav>
+  </header>
+  <section id="content-wrapper">
+    <aside id="side-content">
+      <h3>AJAX Requests</h3>
+      <p id="ajax-buttons">
+        <span>$MD.promise</span>
+        <span>$MD.getJSON</span>
+      </p>
+      <h3>Adding/Removing Elements</h3>
+      <p>
+        <span id="clear-jokes">Clear Jokes</span>
+      </p>
+    </aside>
+    <div id="main-content" class="center">
+      <h3>Click on AJAX Buttons to get Jokes</h3>
+      <div id="post-content">
+        <ul id="joke-list">
+        </ul>
+      </div>
+      <div id="end-content">
+        <p>This is a paragraph inside #end-content</p>
+        <a class='dingo' href="#">Link .dingo </a>
+        <a id="ate-my-baby" href="#">Link #ate-my-baby</a>
+      </div>
+    </div>
     <footer>
-        This is the footer.
+      Experiment with developer tools: <strong>&nbsp;alt+command j</strong>
     </footer>
+  </section>
 </body>
 
 </html>
