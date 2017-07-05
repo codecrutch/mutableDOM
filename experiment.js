@@ -13,9 +13,7 @@ $MD(() => {
     "attr('style') -- get style attribute from tag(s)",
     "attr('style', 'color: blue;') -- set style attribute to tag/s",
     "find('p') -- finds first occurence of match",
-    "forEach -- traverse mutable node list items",
-    "chi"
-
+    "forEach -- traverse mutable node list items"
   ]
 
   greeting.forEach(message => console.log(message));
