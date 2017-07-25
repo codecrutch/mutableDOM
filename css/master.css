@@ -65,7 +65,7 @@ navbar ul li {
   display: flex;
   position: relative;
   min-height: calc(100vh - 58px);
-  padding-bottom: 150px;
+  padding-bottom: 165px;
 }
 
 #side-content {
@@ -96,6 +96,7 @@ footer {
   color: white;
   display: flex;
   justify-content: center;
+  padding-top: 15px;
 }
 
 .button {
@@ -114,4 +115,26 @@ footer {
 
 .button:hover {
   background-color: rgba(157, 165, 10, 0.947);
+}
+
+.buttonize {
+  color: bisque;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: rgba(157, 185, 26, 0.847);
+  border-radius: 5px;
+  box-shadow: 8px 8px 5px -5px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+.turn-red {
+  background: rgba(211, 79, 79, 0.56) !important;
+}
+
+.change-nav {
+  background: rgba(8, 168, 147, 0.71) !important;
 }

@@ -59,6 +59,33 @@ $MD(() => {
   $MD('#clear-jokes').listen("mouseover", () => {
     $MD("#joke-list").clearHTML();
   });
+
+  $MD('#nav-right a').forEach(el => $MD(el).addClass('buttonize'));
+  
+  $MD('#removeclass').listen("click", (e) => {
+    e.preventDefault();
+    $MD('#main-content').removeClass('turn-red');
+  })
+
+  $MD('#toggleclass').listen("click", (e) => {
+    e.preventDefault();
+    $MD('nav').toggleClass("change-nav");
+  })
+
+  $MD('#addclass').listen("click", (e) => {
+    e.preventDefault();
+    $MD('#main-content').addClass('turn-red');
+  });
+
+  $MD('#nav-center').listen('mouseover', (e) => {
+    e.stopPropagation();
+    $MD('#nav-center').style('color', 'red');
+  });
+
+  $MD('#nav-center').listen('mouseleave', (e) => {
+    e.stopPropagation();
+    $MD('#nav-center').style('color', 'inherit');
+  });
 });
 
 

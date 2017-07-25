@@ -38,6 +38,7 @@ Prefix commands with `$MD`
 * `append(tag)` -- add element(s) to tag(s)
 * `remove(tag)` -- remove element(s) from DOM
 * `attr() attr(attr, val)` -- set or get tag attributes
+* `style(attr, val)` -- set style
 * `addClass("classname")` -- add css class to tag(s)
 * `removeClass("classname)` -- remove certain class from tag(s)
 * `toggleClass()` -- toggle class

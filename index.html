@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="./css/master.css">
   <script type="text/javascript" src='./lib/mutabledom.js'></script>
   <script type="text/javascript" src="./experiment.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,9 +21,9 @@
         </section>
         <section id="nav-right">
           <ul>
-            <li><a href="">addClass</a></li>
-            <li><a href="">removeClass</a></li>
-            <li><a href="">toggleClass</a></li>
+            <li><a id='addclass' href="">addClass</a></li>
+            <li><a id='removeclass' href="">removeClass</a></li>
+            <li><a id='toggleclass' href="">toggleClass</a></li>
             #nav-right
           </ul>
         </section>
@@ -46,8 +45,7 @@
     <div id="main-content" class="center">
       <h3>Click on AJAX Buttons to get Jokes</h3>
       <div id="post-content">
-        <ul id="joke-list">
-        </ul>
+        <ul id="joke-list"></ul>
       </div>
       <div id="end-content">
         <p>This is a paragraph inside #end-content</p>
@@ -56,7 +54,7 @@
       </div>
     </div>
     <footer>
-      Experiment with developer tools: <strong>&nbsp;alt+command j</strong>
+      Experiment with developer tools: <strong>&nbsp;alt+command j</strong>&nbsp; for Google Chrome
     </footer>
   </section>
 </body>
