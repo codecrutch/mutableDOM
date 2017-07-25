@@ -1,5 +1,9 @@
 # mutableDOM
 
+Live demo [here][mutableDOM]!
+
+[mutableDOM]: http://www.codecrutch.com/mutableDOM
+
 ### A simple dom manipulation library built using vanilla JavaScript.
 
 ## Features
